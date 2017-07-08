@@ -4,5 +4,5 @@
 		{{ description }}
 	</div>
 </template>
-<script src="./player.js"></script>
+<script src="./player.ts" lang="ts"></script>
 
