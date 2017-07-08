@@ -1,0 +1,22 @@
+{
+  "name": "vue_typescript_tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ts": "tsc player.ts --experimentalDecorators --allowSyntheticDefaultImports",
+    "browserify": "browserify -t vueify -e index.js -o bundle.js",
+    "build": "npm run ts && npm run browserify"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/es6-promise": "0.0.32",
+    "vue": "^2.3.4",
+    "vue-class-component": "^5.0.1"
+  },
+  "devDependencies": {
+    "vueify": "^9.4.1"
+  }
+}
